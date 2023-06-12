@@ -94,6 +94,7 @@ class _FoodCardState extends State<FoodCard> with TickerProviderStateMixin {
   PersistentBottomSheetController<dynamic> showBottomSheetMoreInfoFood(
       BuildContext context, int index) {
     return Scaffold.of(context).showBottomSheet(
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
       transitionAnimationController: controller,
       elevation: 0,
       enableDrag: false,
